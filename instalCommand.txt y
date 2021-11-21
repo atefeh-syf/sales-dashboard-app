@@ -1,9 +1,0 @@
-- npm init --yes
-
-- npm i express --save
-
-- npm i --save sequelize
-
-- npm i swagger-ui
-
-- npm install express sequelize mysql2 cors --save

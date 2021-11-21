@@ -1,25 +1,29 @@
 {
-  "name": "express-app",
+  "name": "sales-dashboard-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module",
-  "requires": true,
+  "main": "source/server.js",
   "scripts": {
-    "start": "node --harmony  index.js",
-    "test": "node --harmony --experimental-json-modules index.js"
+    "build": "rm -rf build/ && prettier --write source/ && tscnpm"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atefeh-syf/sales-dashboard-app.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atefeh-syf/sales-dashboard-app/issues"
+  },
+  "homepage": "https://github.com/atefeh-syf/sales-dashboard-app#readme",
   "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.17.1",
-    "mysql2": "^2.3.3-rc.0",
-    "sequelize": "^6.9.0",
-    "swagger-ui": "^3.52.5"
+    "body-parser": "^1.19.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.14"
+    "@types/body-parser": "^1.19.2",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13"
   }
 }
